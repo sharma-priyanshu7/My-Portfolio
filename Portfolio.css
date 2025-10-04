@@ -1,0 +1,290 @@
+body{
+    margin: 0px;
+    padding:0px;
+    width: 100vw;
+    height: 100.1vh;
+    background-image: url("bg.jpg"), linear-gradient(40deg, #0e0a3d 0%, #042c18 100%);
+    background-width: 100wvw 100vh;
+    background-size: 100vw;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.topbar{
+    align-items: center;
+    height: 20vw;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: auto 80vw;
+    background: linear-gradient(30deg,rgba(1, 1, 23, 1) 0%, rgba(24, 14, 71, 1) 29%, rgba(29, 29, 184, 1) 72%, rgba(26, 110, 156, 1) 100%, rgba(3, 22, 28, 1) 89%);
+    font-size:1.5vw;
+    font-weight: 500;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 3vw 3vw #05061f;
+}
+
+#logo{
+    width: 13vw;
+    height: 13vw;
+    border: 0px solid;
+    border-radius: 0 6.5vw 6.5vw 0;
+    margin: 2vw;
+    margin-left: -1.5vw;
+    text-size: 5vw;
+}
+
+.navbar{
+    display:flex;
+    justify-content: flex-end;
+    gap: 2vw;
+    margin-right: 3vw;    
+}
+
+.Underhead{
+    display: flex;
+    flex-direction: column;
+    row-gap:1.8vw;
+    font-family: "fantasy", "Cursive";
+    font-size: 1.5vw;
+    color: #5f90e3;
+    text-align: center;
+    border-width: 0.4vw 0.4vw 0px 0px;
+    border-radius: 1vw;
+    border-style: solid;
+    border-color: #e3965f;
+    padding: 1vw 1.5vw;
+    align-items: center;
+    background: linear-gradient(30deg,rgba(31, 31, 184, 0.64) 0%, rgba(28, 68, 133, 0.65) 35%, rgba(33, 127, 145, 0.63) 100%);
+}
+
+.fas.fa-home {
+    font-size: 3vw;
+}
+.fas.fa-info-circle {
+    font-size: 3vw;
+}
+.fa-solid.fa-certificate {
+    font-size: 3vw;
+}
+.fas.fa-medal {
+    font-size: 3vw;
+}
+.fas.fa-trophy {
+    font-size: 3vw;
+}
+.fas.fa-phone {
+    font-size: 3vw;
+}
+
+.Block1{
+    background-image: linear-gradient(to right, #2c6f85 0%, #60dde6 17.5%, #162385 17.5%, #162385 19.5%, #2675e6 19.5%, #374985 100%);
+    padding-top: 3vw;
+    padding-bottom: 5vw;
+    width: 90%;
+    margin: 22vw auto -12vw;
+    border-radius: 1vw 1vw 7vw 7vw;
+}
+
+.Headings{
+    width: 25vw;
+    margin-left: -1.5vw;
+    margin-top: 0vw;
+    margin-bottom: 5vw;
+    font-family: fantasy, "Bradley Hand";
+    font-size: 4vw;
+    border-width: 0px 0px 1vw 0px;
+    border-radius: 2px 2.5vw 2.5vw 2px;
+    background: #ff3400;
+    padding: 0.7vw 3vw 0.4vw 3vw;
+    color: #ffd295;
+    border-color: #ff80dd;
+    border-style: solid;
+    text-align: center;
+}
+
+.Layout1{
+    display: flex;
+    align-items: top;
+}
+
+
+
+#P-block{
+    width: 32vw;
+    height: 32vw;
+    border: 1px solid #9d8969;
+    border-radius: 16vw;
+    background: #fff4d5;
+    align-items: start;
+    margin-left: 5vw;
+    margin-right: 1vw;
+    box-shadow: 0px 0px 20px 2vw #10272fa4;
+}
+
+#name{
+    font-size: 9vw;
+    font-weight: 900;
+    color: #ff1569;
+    text-align: center;
+    padding-right: 8px;
+    margin-top: -5vw;
+    font-family: "Brush Script MT", Cursive;
+}
+
+#intro{
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 1vw 5vw;
+    margin: 0px;
+    font-family: "Garamond", serif;
+    color: #121c49;
+}
+
+.title{
+    width: 28vw;
+    text-align: center;
+    font-size: 3.5vw;
+    margin: 2vw 0 2vw 6vw;
+    font-weight: 650;
+    font-family: "Archiero", sans-serif;
+    color: #4e8e9b;
+    background: #182c30;
+    border-width: 0 0 0.5vw 0;
+    border-style: solid;
+    border-color: #323b63;
+    padding: 1.8vw auto;
+    border-radius: 0.5vw 2vw 0.5vw 0.5vw;
+}
+
+.in-title{
+    margin: 0 5% 5vw 23%;
+    text-align: justify;
+    font-size: 3vw;
+    font-color: #0f105b;
+    font-weight: 405;
+    border-width: 72% auto;
+    border-radius: 3.5vw 3.5vw 3.5vw 3.5vw;
+    background-image: linear-gradient(120deg, #2a41a865 0%, #05061f65 100%);
+    padding: 2vw;
+}
+
+.Certificate{
+    display: grid;
+    grid-template-columns: 30vw 30vw;
+    gap: 4vw;
+    justify-content: flex-start;
+    align-items: top;
+    margin-left:20%;
+    
+}
+
+.doc{
+    diaplay: flex;
+    flex-direction: column;
+    width:30vw;
+    border: 0 solid;
+    border-radius: 4vw;
+    padding: 2vw;
+    justify-content: center;
+}
+
+.doc-img{
+    height: 22vw;
+    margin-bottom: 0;
+    padding-top: 0;
+    box-shadow: 2vw 2vw 3px #473b446f;
+}
+
+.doc-details{
+    text-align: center;
+    margin-top: -3vw;
+    padding-top: 0;
+}
+
+.course{
+    font-size: 4.5vw;
+    font-weight: 900;
+    font-family: "Brush Script MT", Cursive;
+    color: #e4a95f;
+    padding: 0;
+}
+
+.marks{
+    padding: 0;
+    margin: -3vw;
+    font-size: 2.5vw;
+    color: #0e0a7c;
+}
+
+.status{
+    font-size: 2.5vw;
+    color: #e42667;
+    margin-top: 3vw;
+    margin-bottom: -4vw;
+    font-weight: 650;
+}
+
+.A-block{
+    display: flex;
+    text-align: center;
+    width: 40vw;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%
+}
+
+.c-page{
+    background-image: linear-gradient(to right, #e6bd13 0%, #e6bd13 15%, #162c42 15%, #162c42 100%);
+    margin: 20vw auto;
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    box-shadow: 0 0 15px 3vw #233a45;
+    border-radius: 4vw;
+}
+
+.contact{
+    text-align: center;
+    width: 90%;
+    margin: 1vw auto;
+}
+
+#additional-contact{
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    margin: 2vw auto;
+}
+
+.c-logo{
+    width: 10vw;
+    height: 10vw;
+}
+
+.c-logo-size{
+    width:6vw;
+}
+
+#c-text{
+    font-size: 6vw;
+    font-weight: 600;
+    color: #6a6658;
+}
+
+#c-email{
+    font-size: 2.5vw;
+}
+
+#c-no{
+    font-size: 2.5vw;
+}
+
+#c-extra{
+    font-size: 3.7vw;
+    font-weight: 450;
+    color: #34453fb;
+}
