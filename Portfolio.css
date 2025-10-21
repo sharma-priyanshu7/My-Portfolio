@@ -7,7 +7,6 @@ body{
     background-size: 100vw 100vh;
     background-attachment: fixed;
     background-repeat: no-repeat;}
-
 .navbar{
     width: 100vw;
     position: fixed;
@@ -18,50 +17,74 @@ body{
     display: grid;
     background: linear-gradient(30deg,rgba(1, 1, 23, 1) 0%, rgba(24, 14, 71, 1) 29%, rgba(29, 29, 184, 1) 72%, rgba(26, 110, 156, 1) 100%, rgba(3, 22, 28, 1) 89%);
     box-shadow: 0 10px 15px #05061f;}
-
 #logo{
     border: 0px solid;
     cursor: none;}
 #logo:hover{
     box-shadow: 0 0 15px 2px rgba(135, 207, 235, 0.675);}
-
+.body-part{
+    width: 100%;
+    display: flex;}
 @media (max-width: 768px){
     .navbar{
         height: 80px;
-        grid-template-columns: auto 10%;
-    }
+        grid-template-columns: auto 10%;}
     #logo{
         width: 50px;
         height: 50px;
         border-radius: 0 25px 25px 0;
         margin: 15px;
-        margin-left: 0px;
-    }
+        margin-left: 0px;}
     .undernavbar{
-        display: none;
-    }
+        display: none;}
     #Hamburger-option{
-        height: 30px;
-    }
+        height: 30px;}
     .fa-bars{
         text-align: bottom;
         font-size: 24px;
         color: rgb(48, 159, 200);
         cursor: pointer;
-        transition: 0.1s ease;
-    }
+        transition: 0.1s ease;}
     .fa-bars:hover{
         text-align: bottom;
         font-size: 28px;
-        color: rgb(46, 108, 144);
-    }
+        color: rgb(46, 108, 144);}
     .fa-bars:active{
         text-align: bottom;
         font-size: 28px;
-        color: rgb(143, 44, 63)
-    }
+        color: rgb(143, 44, 63)}
+    .side-pane{
+        position: fixed;
+        top: 30px;
+        right: -180px;
+        width: 180px;
+        height: 100%;
+        background-image: linear-gradient(to right, #2d185e 0%, #170a36 8%, #170a36 100%);
+        color: rgb(48, 159, 200);
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+        transition: right 0.3s ease;
+        padding-top: 60px;}
+    .side-pane.open{
+        right: 0px;}
+    .side-pane a {
+        display: block;
+        padding: 15px 25px;
+        text-decoration: none;
+        color: rgb(95, 164, 189);
+        font-size: 18px;
+        transition: background 0.2s;}
+    .side-pane a:hover {
+        background: #140b28;
+        font-size: 22px;
+        padding: 12px 22px;}
+    .sideoption{
+        display:flex;
+        gap: 8px;}
+    .body-left{
+        display: none;}
+    .body-right{
+        width: 100%;}
 }
-
 @media (max-width: 500px){
     .navbar{
         grid-template-columns: auto 13%;
@@ -71,24 +94,20 @@ body{
 @media (min-width: 769px){
     .navbar{
         height: 100px;
-        grid-template-columns: auto 80%;  
-    }
+        grid-template-columns: auto 80%;  }
     #logo{
         width: 70px;
         height: 70px;
         border-radius: 0 35px 35px 0;
         margin: 18px;
-        margin-left: 0px;
-    }
+        margin-left: 0px;}
     #Hamburger-option{
-        display: none;
-    }
+        display: none;}
     .undernavbar{
         display: flex;
         justify-content: flex-end;
         gap: 12px;
-        margin-right: 3vw;
-    }
+        margin-right: 3vw;}
     .Underhead{
         display: flex;
         flex-direction: column;
@@ -104,12 +123,16 @@ body{
         border-color: #6758ef;
         padding: 5px 6px;
         align-items: center;
-        background: linear-gradient(30deg,rgba(31, 31, 184, 0.64) 0%, rgba(28, 68, 133, 0.65) 35%, rgba(33, 127, 145, 0.63) 100%);
-    }
+        background: linear-gradient(30deg,rgba(31, 31, 184, 0.64) 0%, rgba(28, 68, 133, 0.65) 35%, rgba(33, 127, 145, 0.63) 100%);}
     .fas.fa-home, .fas.fa-info-circle, .fa-solid.fa-certificate, .fas.fa-medal, .fa-solid.fa-atom, .fas.fa-phone{
         font-size: 15px;
-        color: #44a2e0;
-    }
+        color: #44a2e0;}
+    .body-left{
+        margin-top: 100px;
+        width: 10%;
+        background: linear-gradient(to right, black 0%, black 9.5%, gold 9.5% gold 100%);}
+    .body-right{
+        width: 90%;}
 }
 
 .Block1{
@@ -122,10 +145,10 @@ body{
 }
 
 .Headings{
-    width: 25vw;
-    margin-left: -1.5vw;
+    width: 25%;
+    margin-left: -1.5%;
     margin-top: 0vw;
-    margin-bottom: 5vw;
+    margin-bottom: 5%;
     font-family: fantasy, "Bradley Hand";
     font-size: 4vw;
     border-width: 0px 0px 1vw 0px;
