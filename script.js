@@ -240,7 +240,7 @@ const slides=[
         text: '',
     },
     {
-        img: 'Thanku.jpg',
+        img: 'thanku.jpg',
         alternate: 'Thank You!!',
         title: '',
         text: '',
