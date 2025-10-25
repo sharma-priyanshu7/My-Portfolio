@@ -7,202 +7,327 @@
     <link href="Portfolio.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div id="logo-box"><img id="logo" src="./logo-ps.jpg" alt="Logo"></div>
-        <div id="Hamburger-option" onclick="Hamburgerclick()"><i class="fas fa-bars"></i></div>
-        <div class="undernavbar">
-            <div class="Underhead">
-                <div class="UHsymbol" ><i class="fas fa-home"></i></div>
-                <div class="UHtext">Home</div>
+    <div class="styleback">
+
+        <!-- Navigation Panel -->
+        <nav class="navbar">
+            <div id="logo-box"><img id="logo" src="./logo-ps.jpg" alt="Logo"></div>
+            <div id="Hamburger-option" onclick="Hamburgerclick()"><i class="fas fa-bars"></i></div>
+            <div class="undernavbar">
+                <div class="Underhead" id="UHnav1">
+                    <div class="UHsymbol" ><i class="fas fa-home clr"></i></div>
+                    <div class="UHtext clr">Home</div>
+                </div>
+                <div class="Underhead" id="UHnav2">
+                    <div class="UHsymbol"><i class="fas fa-info-circle clr"></i></div>
+                    <div class="UHtext clr">About</div>
+                </div>
+                <div class="Underhead" id="UHnav3">
+                    <div class="UHsymbol"><i class="fa-solid fa-certificate clr"></i></div>
+                    <div class="UHtext clr">Certificates</div>
+                </div>
+                <div class="Underhead" id="UHnav4">
+                    <div class="UHsymbol"><i class="fas fa-medal clr"></i></div>
+                    <div class="UHtext clr">Skills</div>
+                </div>
+                <div class="Underhead" id="UHnav5">
+                    <div class="UHsymbol"><i class="fa-solid fa-atom clr"></i></div>
+                    <div class="UHtext clr">Projects</div>
+                </div>
+                <div class="Underhead" id="UHnav6">
+                    <div class="UHsymbol"><i class="fas fa-phone clr"></i></div>
+                    <div class="UHtext clr">Contact</div>
+                </div>
             </div>
-            <div class="Underhead">
-                <div class="UHsymbol"><i class="fas fa-info-circle"></i></div>
-                <div class="UHtext">About</div>
-            </div>
-            <div class="Underhead">
-                <div class="UHsymbol"><i class="fa-solid fa-certificate"></i></div>
-                <div class="UHtext">Certificates</div>
-            </div>
-            <div class="Underhead">
-                <div class="UHsymbol"><i class="fas fa-medal"></i></div>
-                <div class="UHtext">Skills</div>
-            </div>
-            <div class="Underhead">
-                <div class="UHsymbol"><i class="fa-solid fa-atom"></i></div>
-                <div class="UHtext">Projects</div>
-            </div>
-            <div class="Underhead">
-                <div class="UHsymbol"><i class="fas fa-phone"></i></div>
-                <div class="UHtext">Contact</div>
-            </div>
+        </nav>
+
+        <!-- Side Pane with options -->
+        <div id="sidePane" class="side-pane">
+            <a>
+                <div class="sideoption" id="USnav1">
+                    <div class="USsymbol" ><i class="fas fa-home"></i></div>
+                    <div class="UStext">Home</div>
+                </div>
+            </a>
+            <a>
+                <div class="sideoption" id="USnav2">
+                    <div class="USsymbol"><i class="fas fa-info-circle"></i></div>
+                    <div class="UStext">About</div>
+                </div>
+            </a>
+            <a>
+                <div class="sideoption" id="USnav3">
+                    <div class="USsymbol"><i class="fa-solid fa-certificate"></i></div>
+                    <div class="UStext">Certificates</div>
+                </div>
+            </a>
+            <a>
+                <div class="sideoption" id="USnav4">
+                    <div class="USsymbol"><i class="fas fa-medal"></i></div>
+                    <div class="UStext">Skills</div>
+                </div>
+            </a>
+            <a>
+                <div class="sideoption" id="USnav5">
+                    <div class="USsymbol"><i class="fa-solid fa-atom"></i></div>
+                    <div class="UStext">Projects</div>
+                </div>
+            </a>
+            <a>
+                <div class="sideoption" id="USnav6">
+                    <div class="USsymbol"><i class="fas fa-phone"></i></div>
+                    <div class="UStext">Contact</div>
+                </div>
+            </a>
         </div>
-    </nav>
 
-    <div id="sidePane" class="side-pane">
-        <a href="#">
-            <div class="sideoption">
-                <div class="UHsymbol" ><i class="fas fa-home"></i></div>
-                <div class="UHtext">Home</div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="sideoption">
-                <div class="UHsymbol"><i class="fas fa-info-circle"></i></div>
-                <div class="UHtext">About</div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="sideoption">
-                <div class="UHsymbol"><i class="fa-solid fa-certificate"></i></div>
-                <div class="UHtext">Certificates</div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="sideoption">
-                <div class="UHsymbol"><i class="fas fa-medal"></i></div>
-                <div class="UHtext">Skills</div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="sideoption">
-                <div class="UHsymbol"><i class="fa-solid fa-atom"></i></div>
-                <div class="UHtext">Projects</div>
-            </div>
-        </a>
-        <a href="#">
-            <div class="sideoption">
-                <div class="UHsymbol"><i class="fas fa-phone"></i></div>
-                <div class="UHtext">Contact</div>
-            </div>
-        </a>
-    </div>
+        <!-- Body Section -->
+        <div class="body-part">
 
-    <div class="body-part">
-        <div class="body-left"></div>
-        <div class="body-right">
-            <div class="Block1">
-                <div class="Headings">Home</div>
+            <!-- Hero Section -->
+            <div id="hero">
                 <div class="Layout1">
-                    <span><img id="P-block" src="mypic.jpg"></span>
-                    <div>
+                    <img id="P-block" src="mypic.jpg">
+                    <div class="hero-text1">
                         <div id="name">Priyanshu Sharma</div>
-                        <div id="intro">I am Priyanshu Sharma, a 2nd year B.Tech student of Electrical and Electronics Engineering. My aim is to become a Master in Robotics and I also have an interest in Programming.</div>
+                        <div id="intro">I am Priyanshu Sharma, 2nd year B.Tech student of Electrical and Electronics Engineering. My aim is to become a Master in Robotics and I also have an interest in Programming.</div>
                     </div>
                 </div>
+                <div class="hero-text2">This is my Portfolio. You are welcome here. Here you can find important details about me.</div>
+                <div class="hero-line"></div>
             </div>
 
-            <div class="Block1">
-                <div class="Headings">About</div>    <!-- About Page -->
-                <div class="Layout2">            
-                    <div class="title">Introduction</div>
-                    <div class="in-title">Hello, I'm <span id="textedit">Priyanshu Sharma</span>. I am 20 years old currently studying in <span id="textedit">B.Tech</span> 1st year in <span id="textedit">EEE Branch (Electrical and Electronics Engineering)</span>.</div>
-                    <div class="title">Interest</div>
-                    <div class="in-title">My Interest fields are:
-                    <ul>
-                        <li>Painting 🎨</li>
-                        <li>Crafting (e.g., Paper, Wood, Cardboard, Thermocol, etc.)</li>
-                        <li>Programming 💻</li>
-                        <li>Robotics 🤖</li>
-                    </ul>
-                    </div>
-                    <div class="title">Qualifications</div>
-                    <div class="in-title">
-                        Currently I'm in 1st Year of <span id="textedit">B.Tech</span> in <span id="textedit">EEE</span>. I'm pursuing this degree at <span id="textedit">Bakhtiyarpur Engineering College, Patna</span>.
-                        <p>I completed my <span id="textedit">Higher Secondary Education</span> from my home town Katihar in 2022 from <span id="textedit">DS College, Katihar</span> with subjects, <span id="textedit">Maths</span> and <span id="textedit">Science</span>.</p>
-                        I completed my <span id="textedit" >Matriculation</span> from <span id="textedit" >Rajkiyakrit High School, Katihar</span>.
-                    </div>
-                </div>
-            </div>
-    
-            <div class="Block1">
-                <div class="Headings">Certificates</div>    <!-- Certifications Page -->
-                <div class="Certificate">
-                    <div class="doc">
-                        <img class="doc-img" src="cert-1.jpg">
-                        <div class="doc-details">
-                            <p class="course">B.Tech</p>
-                            <p class="marks">_.__ CGPA</p>
-                            <p class="status">Ongoing</p>
-                        </div>                
-                    </div>
-                    <div class="doc">
-                        <img class="doc-img" src="cert-2.jpg">
-                        <div class="doc-details">
-                            <p class="course">Higher Secondary</p>
-                            <p class="marks">__%</p>
-                            <p class="status">Completed</p>
+            <!-- Below hero Section -->
+            <div class="belowhero" id="belowHERO">
+
+            <!-- About Section -->
+                <div id="main1">
+                    <div id="Block1" class="Block">
+                        <div class="Headings">About</div>
+                        <div class="Layout2">
+                            <div class="title">Introduction</div>
+                            <div class="in-title">Hey there, I'm Priyanshu Sharma. I am 20 years old currently studying in 2nd year B.Tech in EEE (Electrical and Electronics Engineering).</div>
+                            <div class="title">Interest</div>
+                            <div class="in-title">My Interest fields are:
+                                <ul>
+                                    <li>Programming 💻</li>
+                                    <li>Robotics (Arudino, ESP32 projects) 🤖</li>
+                                </ul>
+                            </div>
+                            <div class="title">Qualifications</div>
+                            <div class="in-title">
+                                Currently I'm in 2nd Year of B.Tech in EEE. I'm pursuing this degree at Bakhtiyarpur Engineering College, Patna in EEE Department.
+                                <p>I completed my Higher Secondary Education from my home town Katihar in 2022 from DS College, Katihar with subjects, Maths and Science.</p>
+                                I completed my Matriculation from +2 High School, Katihar.
+                            </div>
+                            <div class="title">Hobby</div>
+                            <div class="in-title">My Hobbies are:
+                                <ul>
+                                    <li>Painting 🎨</li>
+                                    <li>Crafting ✂</li>
+                                    <li>Whistling 🎶</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="doc">
-                        <img class="doc-img" src="cert-3.jpg">
-                        <div class="doc-details">
-                            <p class="course">Matriculation</p>
-                            <p class="marks">__%</p>
-                            <p class="status">Completed</p>
-                        </div>                
-                    </div>
+                    <div id="overlayblock1" class="overlayblock1"></div>
                 </div>
-                <br><br>
-                <div class="Headings">Extra</div>    <!-- Extra Certificates Page -->
-                <div class="Certificate">
-                    <div class="doc">
-                        <img class="doc-img" src="cert-4.jpg">
-                        <div class="doc-details">
-                            <p class="course">Course-A</p>
-                        </div>                
-                    </div>
-                    <div class="doc">
-                        <img class="doc-img" src="cert-5.jpg">
-                        <div class="doc-details">
-                            <p class="course">Course-B</p>
-                        </div>                
-                    </div>
-                    <div class="doc">
-                        <img class="doc-img" src="cert-6.jpg">
-                        <div class="doc-details">
-                            <p class="course">Course-C</p>
-                        </div>                
-                    </div>
-                    <div class="doc">
-                        <img class="doc-img" src="cert-7.jpg">
-                        <div class="doc-details">
-                            <p class="course">Course-D</p>
-                        </div>                
-                    </div>
-                </div>
-                <br>
-            </div>
 
-            <div class="Block1">
-                <div class="Headings">Skills</div>    <!-- Skills Page -->
-                <div class="A-block">
-                    <marquee>We will add it soon!!</marquee>
+                <!-- Certificate Section -->
+                <div id="main2">
+                    <div id="overlay2" class="overlay2"></div>
+                    <div id="Block2" class="Block">
+                        <div class="Headings">Certificates</div>
+                        <button class="see-all-btn" id="seeAllBtn">See all</button>
+
+                        <!-- Certificate Area -->
+                        <div class="Certificate" id= "certificateall">
+                            <div class="doc" id="certA">
+                                <div class="imgbox">
+                                    <img src="cert2.jpg"  class="doc-img" alt="C Programming">
+                                </div>
+                                <div class="doc-details">
+                                    <p class="course">C Programming</p>
+                                    <p class="certdetails">By: IIT Bombay</p>
+                                    <p class="year">Year: 2025</p>
+                                </div>
+                            </div>
+                            <div class="doc" id="certB">
+                                <div class="imgbox">
+                                    <img src="cert3.jpg" class="doc-img" alt="Google Cloud Computing and Generative AI">
+                                </div>
+                                <div class="doc-details">
+                                    <p class="course">Google Cloud Computing and Generative AI</p>
+                                    <p class="certdetails">By: Google</p>
+                                    <p class="year">Year: 2025</p>
+                                </div>
+                            </div>
+                            <div class="doc" id="certC">
+                                <div class="imgbox">
+                                    <img src="cert7.jpg" class="doc-img" alt="Workshop on Web Development with AI">
+                                </div>
+                                <div class="doc-details">
+                                    <p class="course">Workshop on Web Development with AI</p>
+                                    <p class="certdetails">By: Google & Vlun Shields</p>
+                                    <p class="year">Year: 2024</p>
+                                </div>
+                            </div>
+                            <div class="doc" id="certD">
+                                <div class="imgbox">
+                                    <img src="cert1.jpg" class="doc-img" alt="Introduction to Cybersecurity">
+                                </div>
+                                <div class="doc-details">
+                                    <p class="course">Introduction to Cybersecurity</p>
+                                    <p class="certdetails">By: Cisco Academy</p>
+                                    <p class="year">Year: 2024</p>
+                                </div>
+                            </div>
+                            <div class="doc" id="certE">
+                                <div class="imgbox">
+                                    <img src="cert4.jpg" class="doc-img" alt="Introduction to Computer Training">
+                                </div>
+                                <div class="doc-details">
+                                    <p class="course">Introduction to Computer Training</p>
+                                    <p class="certdetails">By: IIT Bombay</p>
+                                    <p class="year">Year: 2024</p>
+                                </div>
+                            </div>
+                            <div class="doc" id="certF">
+                                <div class="imgbox">
+                                    <img src="cert5.jpg" class="doc-img" alt="Campus Solution Challange by Google">
+                                </div>
+                                <div class="doc-details">
+                                    <p class="course">Campus Solution Challange</p>
+                                    <p class="certdetails">By: Google & Hack to Skills</p>
+                                    <p class="year">Year: 2025</p>
+                                </div>
+                            </div>
+                            <div class="doc" id="certG">
+                                <div class="imgbox">
+                                    <img src="cert6.jpg" class="doc-img" alt="Growth and Operation Certificate by SparkIIT & WIPRO">
+                                </div>
+                                <div class="doc-details">
+                                    <p class="course">Growth and Operation Certificate</p>
+                                    <p class="certdetails">By: SparkIIT & WIPRO</p>
+                                    <p class="year">Year: 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </div>
+                    <div id="overlayblock2" class="overlayblock2"></div>
+                </div>
+
+                <!-- Carousel Section -->
+                <div class="modal-bg" id="modalBg">
+                    <div class="carousel" id="carousel">
+                        <button class="nav-btn prev" id="prevBtn">&#10094;</button>
+                        <button class="nav-btn next" id="nextBtn">&#10095;</button>
+                            <img id="cimage" alt="" src=""/>
+                            <div>
+                                <h3 id="ctext1"></h3>
+                                <p id="ctext2"></p>
+                                <button class="close-btn" id="closeBtn">Close</button>
+                            </div>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div id="main3">
+                    <div id="Block3" class="Block">
+                        <div class="Headings">Skills</div>
+                        <div class="titleskills">Front-End Core</div>
+                        <div class="in-title">
+                            <ul class="skillitems">
+                                <li class="itemskill"><div class="iteminside"><span>Html5</span><div class="iconbox"><img src="htmlicon.png" class="texticon"/></div></div></li>
+                                <li class="itemskill"><div class="iteminside"><span>CSS3</span><div class="iconbox"><img src="cssicon.png" class="texticon"/></div></div></li>
+                                <li class="itemskill"><div class="iteminside"><span>Bootstrap</span><div class="iconbox"><img src="bootstrapicon.png" class="texticon"/></div></div></li>
+                            </ul>
+                        </div>
+                        <div class="titleskills">Programming</div>
+                        <div class="in-title">
+                            <ul class="skillitems">
+                                <li class="itemskill"><div class="iteminside"><span>C Programming</span><div class="iconbox"><img src="Cicon.png" class="texticon"/></div></div></li>
+                                <li class="itemskill"><div class="iteminside"><span>Basic Python</span><div class="iconbox"><img src="pythonicon.png" class="texticon"/></div></div></li>
+                                <li class="itemskill"><div class="iteminside"><span>Basic JavaScript</span><div class="iconbox"><img src="javascripticon.png" class="texticon"/></div></div></li>
+                                <li class="itemskill"><div class="iteminside"><span>React JS</span><div class="iconbox"><img src="reactjsicon.png" class="texticon"/></div></div></li>
+                            </ul>
+                        </div>
+                        <div class="titleskills">Tools & Design</div>
+                        <div class="in-title">
+                            <ul class="skillitems">
+                                <li class="itemskill"><div class="iteminside"><span>Git/GitHub</span><div class="iconbox"><img src="githubicon.png" class="texticon"/></div></div></li>
+                                <li class="itemskill"><div class="iteminside"><span>VS Code</span><div class="iconbox"><img src="vscodeicon.png" class="texticon"/></div></div></li>
+                                <li class="itemskill"><div class="iteminside"><span>Canva</span><div class="iconbox"><img src="canvaicon.png" class="texticon"/></div></div></li>
+                                <li class="itemskill"><div class="iteminside"><span>PowerPoint</span><div class="iconbox"><img src="powerpointicon.png" class="texticon"/></div></div></li>
+                                <li class="itemskill"><div class="iteminside"><span>Microsoft Excel</span><div class="iconbox"><img src="excelicon.png" class="texticon"/></div></div></li>
+                                <li class="itemskill"><div class="iteminside"><span>Microsoft Word</span><div class="iconbox"><img src="wordicon.png" class="texticon"/></div></div></li>
+                            </ul>
+                        </div>
+                        <div class="titleskills">Robotics</div>
+                        <div class="in-title">
+                            <ul class="skillitems">
+                                <li class="itemskill"><div class="iteminside"><span>ESP32</span></div></li>
+                                <li class="itemskill"><div class="iteminside"><span>Arudino</span><div class="iconbox"><img src="arudinoicon.png" class="texticon"/></div></div></li>
+                                <li class="itemskill"><div class="iteminside"><span>Arudion IDE Platform</span><div class="iconbox"><img src="arudinoideicon.png" class="texticon"/></div></div></li>
+                            </ul>
+                            <div class="divider"></div>
+                            I had build some projects using ESP32 and Arudino Microcontroller.
+                        </div>
+                        <div class="titleskills">Soft Skills</div>
+                        <div class="in-title">
+                            <ul class="skillitems">
+                                <li>Teamwork</li>
+                                <li>Problem Solving</li>
+                                <li>Lead a team in College to make Robotics project together.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="overlayblock3" class="overlayblock3"></div>
+                </div>
+
+                <!-- Projects and Achievement Section -->
+                <div id="main4">
+                <div id="Block4" class="Block">
+                    <div class="Headings">Projects</div>
+                    <center>I will add it soon!!</center>
+                </div>
+                <div id="overlayblock4" class="overlayblock4"></div>
                 </div>
             </div>
+            <div class="message" id="message"><div class="messagebox">Click to view Document</div></div>
+        </div>
 
-            <div class="Block1">
-                <div class="Headings">Achievments</div>    <!-- Achievments Page -->
-                <div class="A-block"><marquee>We will add it soon!!</marquee></div>
+        <!-- Document Display Card -->
+        <div class="card-popup" id="cardopen">
+            <img id="cardImage" src="" alt="Card Image">
+            <div class="card-content">
+                <h1 id="cardTitle"></h1>
+                <h3 id="cardSubtitle"></h3>
+                <p id="cardPara1"></p>
+                <p id="cardPara2"></p>
+                <button class="cross-btn" id="crossBtn">Close</button>
             </div>
         </div>
+        <div id="overlay1" class="overlay1"></div>
     </div>
-    <div class="c-page">
-        <div class="contact" id="c-text">Contact Us</div>
-        <div class="contact" id="c-email">imsharmapriyanshu@gmail.com</div>
-        <div class="contact" id="c-no">+91 abcdefghij</div>
-        <div class="contact" id="c-extra">You can also connect with me</div>
-        <div id="additional-contact">
-            <div class="c-logo"><img class="c-logo-size" src="fb-logo.png"></div>
-            <div class="c-logo"><img class="c-logo-size" src="insta-logo.png"></div>
-            <div class="c-logo"><img class="c-logo-size" src="linkedin-logo.png"></div>
-            <div class="c-logo"><img class="c-logo-size" src="wp-logo.png"></div>
+    <footer>
+        <div id="cpage" class="c-page">
+            <div class="contact" id="c-text">Contact Me</div>
+            <div class="contact" id="c-email"><a href="mailto:imsharmapriyanshu@gmail.com">imsharmapriyanshu@gmail.com</a></div>
+            <div class="contact" id="c-no">+91 6201233537</div>
+            <div class="contact" id="c-extra">You can also connect with me</div>
+            <div id="additional-contact">
+                <div class="c-logo"><a href="https://www.linkedin.com/in/impriyanshu-sharma"><img class="c-logo-size" src="linkedinlogo.png" alt="Linkedin"></a></div>
+                <div class="c-logo"><a href="https://github.com/sharma-priyanshu7"><img class="c-logo-size" src="githublogo.png" alt="Github"></a></div>
+                <div class="c-logo"><a href="https://unstop.com/u/priyasha74156"><img class="c-logo-size" src="unstoplogo.png" alt="Unstop"></a></div>
+            </div>
         </div>
-
-    </div>
-
-
+        <video width="350px" height="450px" autoplay muted loop>
+            <source src="handwave.mp4" type="video/mp4">
+        </video>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
